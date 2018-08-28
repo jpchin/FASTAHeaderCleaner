@@ -54,12 +54,9 @@ if __name__ == "__main__":
             #Replace all spaces with hyphens
             newLine = line.replace(" ", "-")
             #Remove all square brackets
-            newLine = line.replace("[", "")
-            newLine = line.replace("]", "")
+            newLine = newLine.replace("[", "")
+            newLine = newLine.replace("]", "")
             #Write the line to the output file
-            file.write(newLine)
+            file.write(newLine + str("\n"))
 
-    print("Done!")
-
-
-
+print("Done!")
